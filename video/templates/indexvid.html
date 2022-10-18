@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Rekomendasi Video Pembelajaran Matematika</h2>
+    <p>Berikut ini merupakan beberapa rekomendasi video pembelajaran terkait materi-materi matematika.</p>
+
+    {% for judul in title %}
+        <li>{{ judul }}</li>
+        
+    {% endfor %}
+
+{% endblock %}

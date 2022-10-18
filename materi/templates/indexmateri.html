@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Materi-Materi Matematika</h2>
+    <p>Berikut ini merupakan materi-materi di mata pelajaran matematika.</p>
+
+    {% for judul in title %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+
+{% endblock %}

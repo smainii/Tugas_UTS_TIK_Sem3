@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL ABOUT PEMBELAJARAN MATEMATIKA</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\style.css' %}"> 
+    <link rel="stylesheet" type="text/css" href="{% static "vendor\bootstrap\bootstrap.css" %}">    
+
+<body style="background: #f3f0e7;">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="height: 30px;" src="{% static "images\logomtk.png" %}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/artikel/">ARTIKEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contoh/">CONTOH SOAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/latihan/">LATIHAN SOAL</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/materi/">MATERI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/video/">VIDEO</a>
+                  </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <script src="{% static "vendor\jquery\jquery.js" %}" type="text/javascript"></script>
+
+    <script src="{% static "vendor\popper\popper.js" %}" type="text/javascript"></script>
+
+    <script src="{% static "vendor\bootstrap\bootstrap.js" %}" type="text/javascript"></script>
+
+    <div class="container">
+        {% include 'judul.html' %}
+
+    {% block content %}
+    {% endblock %}
+    </div>
+
+</body>
+</html>

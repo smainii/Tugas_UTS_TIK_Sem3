@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Contoh Soal Matematika</h2>
+    <p>Berikut ini merupakan beberapa contoh soal dari berbagai materi matematika.</p>
+
+    {% for judul in title %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    
+{% endblock %}

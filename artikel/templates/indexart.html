@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Artikel Matematika</h2>
+    <p>Berikut ini merupakan beberapa artikel serta jurnal yang berhubungan dengan matematika.</p>
+
+    {% for judul in title %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+
+{% endblock %}
